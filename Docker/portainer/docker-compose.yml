@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  portainer:
+    image: portainer/portainer
+    restart: always
+    container_name: portainer
+    command: --no-auth -H tcp://10.0.75.1:2375
+    ports:
+      - "9000:9000"
+    environment:
+      - TZ=Europe/Amsterdam
+      - PGID=1001
+      - PUID=1001
+    volumes:
+      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+      
+volumes:
+  portainer_data:

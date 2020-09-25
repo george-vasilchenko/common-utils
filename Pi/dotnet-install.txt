@@ -1,0 +1,20 @@
+# guide
+https://edi.wang/post/2019/9/29/setup-net-core-30-runtime-and-sdk-on-raspberry-pi-4
+
+# dotnet downloads
+https://dotnet.microsoft.com/download/dotnet-core/3.1
+
+
+# steps:
+# download the runtime and sdk into a ~/Downloads folder ! ARM32
+wget <usr>-linux-arm.tar.gz
+
+# unpack to /usr/share/dotnet-arm32
+tar zxf <zip-name>-linux-arm.tar.gz -C /usr/share/dotnet-arm32
+
+# update env and path
+export DOTNET_ROOT=/usr/share/dotnet-arm32
+export PATH=$PATH:/usr/share/dotnet-arm32
+
+# validate
+dotnet --info

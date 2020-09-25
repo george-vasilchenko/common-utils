@@ -1,0 +1,11 @@
+# theme location
+C:\Users\<USER>\Documents\WindowsPowerShell\Modules\oh-my-posh\<VERSION>\Themes
+
+# settings location
+C:\Users\<USER>\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState
+
+# Cascadia Code PL
+https://github.com/microsoft/cascadia-code/releases?WT.mc_id=-blog-scottha
+
+# complete step guide
+https://www.hanselman.com/blog/HowToMakeAPrettyPromptInWindowsTerminalWithPowerlineNerdFontsCascadiaCodeWSLAndOhmyposh.aspx

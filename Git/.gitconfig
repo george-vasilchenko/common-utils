@@ -1,0 +1,22 @@
+[user]
+    email = george.vasilchenko@wolterskluwer.com
+    name = George Vasilchenko
+[core]
+    editor = \"C:\\Users\\George\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+    keepBackup = false
+    prompt = false
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+    prompt = false
+[mergetool]
+    keepBackup = false
+[alias]
+   lolg = log --graph --oneline
+   lol = log --oneline
+   fuckit = reset --hard --no-quiet

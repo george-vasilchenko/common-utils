@@ -1,0 +1,12 @@
+https://bytemares.com/mongodb/docker/2019/10/01/simple-mongodb-replica-set-with-docker.html
+
+docker exec -it mongo0 mongo --port 30000
+
+config={"_id":"rs0","members":[{"_id":0,"host":"mongo0:30000"},{"_id":1,"host":"mongo1:30001"},{"_id":2,"host":"mongo2:30002"}]}
+
+C:\Windows\System32\drivers\etc\hosts
+127.0.0.1 mongo0 mongo1 mongo2
+
+rs.initiate(config);
+
+mongodb://localhost:30000,localhost:30001,localhost:30002/?replicaSet=rs0

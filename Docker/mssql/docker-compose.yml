@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  mssql.local:
+    container_name: mssql.local
+    image: microsoft/mssql-server-linux:2017-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Sebbo1473!
+    ports:
+      - "11433:1433"
+    volumes:
+      - //i/_DockerData/mssql.local/:/var/opt/mssql
+      - //i/_DockerData/mssql.local/data:/var/opt/mssql/data
